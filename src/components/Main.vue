@@ -10,50 +10,50 @@ export default {
   },
   methods: {
     question_answer(text) {
-      console.log(text)
+      console.log(`Question n: ${text}`)
+      console.log(document.getElementById(`question_${text}`).value);
     }
   }
 }
 </script>
 
 <template>
-  <!-- <h1 class="display-1">Capo 1!</h1> -->
-  <!-- <div v-for="question in state.multiple_general_b2s" :key="question[0]">
-    <p>{{ question[2] }}</p>
-  </div> -->
-  <!-- <div>
-    {{ state.multiple_general_b2s[0] }}
-  </div> -->
 
   <div id="wrapper" class="mt-5">
-    <div>
-      <p><small>Domanda n: <b>{{ state.multiple_general_b2s[0][1] }}</b></small></p>
-      <p>{{ state.multiple_general_b2s[0][2] }}</p>
+    <div v-for="question in state.multiple_general_b2s" :key="question[0]">
+      <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
+      <p>{{ question[2] }}</p>
       <hr>
       <div id="sub-wrapper">
         <div>
-          <p>{{ state.multiple_general_b2s[0][3] }}</p>
-          <p>{{ state.multiple_general_b2s[0][4] }}</p>
-          <p>{{ state.multiple_general_b2s[0][5] }}</p>
+          <p><small class="text-primary"><b>a: </b></small>{{ question[3] }}</p>
+          <p><small class="text-primary"><b>b: </b></small>{{ question[4] }}</p>
+          <p><small class="text-primary"><b>c: </b></small>{{ question[5] }}</p>
         </div>
         <div>
-          <p>a:
-            <input type="radio" :name="state.multiple_general_b2s[0][3]" :id="state.multiple_general_b2s[0][1]">
+          <!-- <p>a:
+            <input type="radio" :name="question[3]" :id="`${question[1]}_1`">
           </p>
           <p>
             b:
-            <input type="radio" :name="state.multiple_general_b2s[0][4]" :id="state.multiple_general_b2s[0][1]">
+            <input type="radio" :name="question[4]" :id="`${question[1]}_2`">
           </p>
           <p>
             c:
-            <input type="radio" :name="state.multiple_general_b2s[0][5]" :id="state.multiple_general_b2s[0][1]">
-          </p>
+            <input type="radio" :name="question[5]" :id="`${question[1]}_3`">
+          </p> -->
+          <select :name="`question_${question[1]}`" :id="`question_${question[1]}`">
+            <option selected disabled class="text-center">&DownArrow;</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+          </select>
         </div>
       </div>
       <hr>
       <div id="submit">
         <div>
-          <button class="btn btn-lg btn-primary bg-gradient" @click="question_answer('ciao')">
+          <button class="btn btn-lg btn-primary bg-gradient" @click="question_answer(question[1])">
             Invia
           </button>
         </div>
@@ -98,6 +98,13 @@ div#wrapper {
 
       div:first-child {
         width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        p {
+          font-size: small;
+        }
       }
 
       div:last-child {
@@ -105,6 +112,7 @@ div#wrapper {
 
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
 
       }
 
