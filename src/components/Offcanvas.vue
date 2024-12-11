@@ -27,6 +27,8 @@ export default {
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+
+            <!-- module 1 handler -->
             <div class="div_wrapper">
                 <div>
                     <p>
@@ -41,22 +43,66 @@ export default {
             </div>
             <hr>
 
-            <p>
-                Modulo 2
-            </p>
+            <!-- module 2 handler -->
+            <div class="div_wrapper">
+                <div>
+                    <p>
+                        Modulo 2
+                    </p>
+                </div>
+                <div>
+                    <span class="span-activate" v-if="state.module_2"
+                        @click="state.module_2 = false">Disattiva</span><span class="span-deactivate"
+                        v-if="!state.module_2" @click="state.module_2 = true">Attiva</span>
+                </div>
+            </div>
             <hr>
-            <p>
-                Modulo 3
-            </p>
+
+            <!-- module 3 handler -->
+            <div class="div_wrapper">
+                <div>
+                    <p>
+                        Modulo 3
+                    </p>
+                </div>
+                <div>
+                    <span class="span-activate" v-if="state.module_3"
+                        @click="state.module_3 = false">Disattiva</span><span class="span-deactivate"
+                        v-if="!state.module_3" @click="state.module_3 = true">Attiva</span>
+                </div>
+            </div>
             <hr>
-            <p>
-                Modulo 4
-            </p>
+
+            <!-- module 4 handler -->
+            <div class="div_wrapper">
+                <div>
+                    <p>
+                        Modulo 4
+                    </p>
+                </div>
+                <div>
+                    <span class="span-activate" v-if="state.module_4"
+                        @click="state.module_4 = false">Disattiva</span><span class="span-deactivate"
+                        v-if="!state.module_4" @click="state.module_4 = true">Attiva</span>
+                </div>
+            </div>
             <hr>
-            <p>
-                Modulo 5
-            </p>
+
+            <!-- module 5 handler -->
+            <div class="div_wrapper">
+                <div>
+                    <p>
+                        Modulo 5
+                    </p>
+                </div>
+                <div>
+                    <span class="span-activate" v-if="state.module_5"
+                        @click="state.module_5 = false">Disattiva</span><span class="span-deactivate"
+                        v-if="!state.module_5" @click="state.module_5 = true">Attiva</span>
+                </div>
+            </div>
             <hr>
+
         </div>
     </div>
 
