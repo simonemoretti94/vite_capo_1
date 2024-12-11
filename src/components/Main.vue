@@ -9,9 +9,30 @@ export default {
     }
   },
   methods: {
-    question_answer(text) {
-      console.log(`Question n: ${text}`)
-      console.log(document.getElementById(`question_${text}`).value);
+    question_answer(n_question, list) {
+      let tempValue = document.getElementById(`question_${n_question}`).value;
+      //console.log(`Question n: ${n_question}`)
+      console.log(document.getElementById(`question_${n_question}`).value);
+
+      list.forEach(element => {
+        if (element[1] == n_question) {
+          console.log(element);
+          let tempBtn = document.getElementById(`button_${n_question}`)
+          //console.log(tempBtn);
+          if (element[6] == tempValue) {
+            console.log('right!');
+            tempBtn.classList.remove('btn-danger')
+            tempBtn.classList.add('btn-success')
+            tempBtn.innerHTML = 'CORRETTO'
+          }
+          else {
+            console.log('wrong!');
+            tempBtn.classList.remove('btn-primary')
+            tempBtn.classList.add('btn-danger')
+            tempBtn.innerHTML = 'INVIA <small>(errore)</small>'
+          }
+        }
+      });
     }
   }
 }
@@ -53,7 +74,8 @@ export default {
       <hr>
       <div id="submit">
         <div>
-          <button class="btn btn-lg btn-primary bg-gradient" @click="question_answer(question[1])">
+          <button class="btn btn-lg btn-primary bg-gradient"
+            @click="question_answer(question[1], state.multiple_general_b2s)" :id="`button_${question[1]}`">
             Invia
           </button>
         </div>
