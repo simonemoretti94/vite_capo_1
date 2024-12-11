@@ -1,6 +1,6 @@
 <script>
 import { state } from '/state.js';
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
@@ -9,7 +9,7 @@ export default {
   //greetingMessage: String,
   //},
   components: { //imported components 
-    HelloWorld,
+    Main,
 
   },
   data() { //variables, bool, array, objects and so on
@@ -22,5 +22,5 @@ export default {
 </script>
 
 <template>
-  <HelloWorld></HelloWorld>
+  <Main></Main>
 </template>

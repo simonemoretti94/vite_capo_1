@@ -2,7 +2,7 @@
 import { state } from '/state.js'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Main',
   data() {
     return {
       state,
@@ -12,8 +12,8 @@ export default {
 </script>
 
 <template>
-  <h1 class="display-1">Hello world!</h1>
-  <div v-for="question in state.multiple_prevenction_b1s" :key="question[0]">
+  <h1 class="display-1">Capo 1!</h1>
+  <div v-for="question in state.multiple_general_b2s" :key="question[0]">
     <p>{{ question[2] }}</p>
   </div>
 </template>
