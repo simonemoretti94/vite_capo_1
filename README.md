@@ -57,7 +57,8 @@ Quando sei pronto per aggiornare il branch gh-pages con le ultime modifiche, ese
 	npm run build
 
 Aggiungi i file generati nella directory dist al tuo repository Git.
-git add dist -f
+
+  git add dist -f
 	git commit -m "Aggiorna dist directory"
 
 Pusha le modifiche nel branch gh-pages.
