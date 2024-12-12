@@ -42,7 +42,9 @@ export default {
 <template>
 
   <!-- module 1 -->
-  <div v-if="state.module_1" id="wrapper" class="mt-5">
+  <div v-if="state.module_1" id="wrapper" class="mt-3">
+    <h6 class="my-2 display-6 text-center">{{ state.multiple_prevenction_b1s[2][0] }}</h6>
+    <hr>
     <div v-for="question in state.multiple_prevenction_b1s[1]" :key="question[0]">
       <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
       <p>{{ question[2] }}</p>
@@ -78,7 +80,9 @@ export default {
 
 
   <!-- module 2 -->
-  <div v-if="state.module_2" id="wrapper" class="mt-5">
+  <div v-if="state.module_2" id="wrapper" class="mt-3">
+    <h6 class="my-2 display-6 text-center">{{ state.multiple_general_b2s[2][0] }}</h6>
+    <hr>
     <div v-for="question in state.multiple_general_b2s[1]" :key="question[0]">
       <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
       <p>{{ question[2] }}</p>
@@ -110,6 +114,116 @@ export default {
       </div>
     </div>
   </div>
+
+  <!-- module 3 -->
+  <div v-if="state.module_3" id="wrapper" class="mt-3">
+    <h6 class="my-2 display-6 text-center">{{ state.multiple_helihems_b3s[2][0] }}</h6>
+    <hr>
+    <div v-for="question in state.multiple_helihems_b3s[1]" :key="question[0]">
+      <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
+      <p>{{ question[2] }}</p>
+      <hr>
+      <div id="sub-wrapper">
+        <div>
+          <p><small class="text-primary"><b>a: </b></small>{{ question[3] }}</p>
+          <p><small class="text-primary"><b>b: </b></small>{{ question[4] }}</p>
+          <p><small class="text-primary"><b>c: </b></small>{{ question[5] }}</p>
+        </div>
+        <div>
+          <select :name="`question_${question[1]}`" :id="`question_${question[1]}_${state.multiple_helihems_b3s[0]}`">
+            <option selected disabled class="text-center">&DownArrow;</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div id="submit">
+        <div>
+          <button class="btn btn-lg btn-primary bg-gradient"
+            @click="question_answer(question[1], state.multiple_helihems_b3s)"
+            :id="`button_${question[1]}_${state.multiple_helihems_b3s[0]}`">
+            Invia
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- module 4 -->
+  <div v-if="state.module_4" id="wrapper" class="mt-3">
+    <h6 class="my-2 display-6 text-center">{{ state.multiple_helitechnique_b4s[2][0] }}</h6>
+    <hr>
+    <div v-for="question in state.multiple_helitechnique_b4s[1]" :key="question[0]">
+      <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
+      <p>{{ question[2] }}</p>
+      <hr>
+      <div id="sub-wrapper">
+        <div>
+          <p><small class="text-primary"><b>a: </b></small>{{ question[3] }}</p>
+          <p><small class="text-primary"><b>b: </b></small>{{ question[4] }}</p>
+          <p><small class="text-primary"><b>c: </b></small>{{ question[5] }}</p>
+        </div>
+        <div>
+          <select :name="`question_${question[1]}`"
+            :id="`question_${question[1]}_${state.multiple_helitechnique_b4s[0]}`">
+            <option selected disabled class="text-center">&DownArrow;</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div id="submit">
+        <div>
+          <button class="btn btn-lg btn-primary bg-gradient"
+            @click="question_answer(question[1], state.multiple_helitechnique_b4s)"
+            :id="`button_${question[1]}_${state.multiple_helitechnique_b4s[0]}`">
+            Invia
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- module 5 -->
+  <div v-if="state.module_5" id="wrapper" class="mt-3">
+    <h6 class="my-2 display-6 text-center">{{ state.multiple_firstaid_b5s[2][0] }}</h6>
+    <hr>
+    <div v-for="question in state.multiple_firstaid_b5s[1]" :key="question[0]">
+      <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
+      <p>{{ question[2] }}</p>
+      <hr>
+      <div id="sub-wrapper">
+        <div>
+          <p><small class="text-primary"><b>a: </b></small>{{ question[3] }}</p>
+          <p><small class="text-primary"><b>b: </b></small>{{ question[4] }}</p>
+          <p><small class="text-primary"><b>c: </b></small>{{ question[5] }}</p>
+        </div>
+        <div>
+          <select :name="`question_${question[1]}`" :id="`question_${question[1]}_${state.multiple_firstaid_b5s[0]}`">
+            <option selected disabled class="text-center">&DownArrow;</option>
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div id="submit">
+        <div>
+          <button class="btn btn-lg btn-primary bg-gradient"
+            @click="question_answer(question[1], state.multiple_firstaid_b5s)"
+            :id="`button_${question[1]}_${state.multiple_firstaid_b5s[0]}`">
+            Invia
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <style scoped>
@@ -120,6 +234,7 @@ export default {
 }
 
 div#wrapper {
+  background-color: white;
   margin: auto .5rem;
   border: .5px solid black;
   border-radius: 5px;

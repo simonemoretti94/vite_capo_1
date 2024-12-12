@@ -166,7 +166,10 @@ export const state = reactive({
             [
                 51, 50, 'Un idrante fa parte delle misure di:', 'protezione attiva', 'protezione passiva', 'prevenzione', 'a', '2024-08-27 05:29:48', '2024-08-27 05:29:48'
             ],
-        ]
+        ],
+        [
+            'Modulo 1'
+        ],
     ],
 
     multiple_general_b2s: [
@@ -434,10 +437,544 @@ export const state = reactive({
                 65, 65, 'In caso di ustione chimica, le prime cose da fare sono:',
                 'allontanare la vittima dall\'agente ustionate e lavare con acqua abbondantemente, fino alla totale rimozione dell\'agente ustionante', 'non agire mai sulla parte lesa e trasportare la vittima immediatamente in ospedale', 'fasciare stretto per impedire l\'allargamento dell\'ustione', 'a', '2024-08-31 09:56:36', '2024-08-31 09:56:36'
             ],
-        ]
-    ]
+        ],
+        [
+            'Modulo 2'
+        ],
+    ],
 
+    multiple_helihems_b3s: [
+        [
+            'module_3'
+        ],
+        [
+            [
+                1, 1, 'Un\'aerovia è:',
+                'la superstrada che porta all\'aeroporto', 'uno spazio aereo', 'la via di rullaggio per gli aerei sull\'area di movimento', 'b', '2024-08-31 06:31:47', '2024-08-31 06:31:47'
+            ],
+            [
+                2, 2, 'La TDZ (Touch Down Zone) è:',
+                'il terminal della zona aeroportuale', 'la zona di toccata della pista', 'il punto in cui l\'aeromobile si deve fermare prima di entrare nella zona di parcheggio', 'b', '2024-08-31 06:32:28', '2024-08-31 06:32:28'
+            ],
+            [
+                3, 3, 'Se la pista di volo è orientata a 28° nord, le testate sono denominate:',
+                '03 -21', '01 - 28', '02 - 08', 'a', '2024-08-31 06:46:37', '2024-08-31 06:46:37'
+            ],
+            [
+                4, 4, 'Confrontando le zone controllate dalla TWR e dall\'APP risulta che:',
+                'la zona dell\'APP è interna a quella della TWR', 'la zona della TWR è uguale a quella dell\'APP', 'la zona della TWR è compresa in quella dell\'APP', 'c', '2024-08-31 06:46:54', '2024-08-31 06:46:54'
+            ],
+            [
+                5, 5, 'Se una testata pista è denominata 35, l\'altra sarà:',
+                '17', '53', '04', 'a', '2024-08-31 06:47:16', '2024-08-31 06:47:16'
+            ],
+            [
+                6, 6, 'Gli automezzi di soccorso VF in ambito aeroportuale sono collegati via radio:',
+                'solo con la sede di servizio VF', 'solo con la Torre di controllo', 'solo con la Torre di controllo', 'c', '2024-08-31 06:47:35', '2024-08-31 06:47:35'
+            ],
+            [
+                7, 7, 'Secondo l\'alfabeto internazionale ICAO la lettera T si legge:',
+                'Taxi', 'Toronto', 'Tango', 'c', '2024-08-31 06:52:19', '2024-08-31 06:52:19'
+            ],
+            [
+                8, 8, 'Se una testata pista è denominata 37, l\'altra sarà:',
+                '55', 'non esiste', '01', 'b', '2024-08-31 06:53:44', '2024-08-31 06:53:44'
+            ],
+            [
+                9, 9, 'Il numero di testata 05 indica che la pista è orientata:',
+                '5° rispetto al Nord', '50° rispetto al Nord', '10° rispetto al Nord', 'b', '2024-08-31 06:54:50', '2024-08-31 06:54:50'
+            ],
+            [
+                10, 10, 'Con la sigla FOD si intende:',
+                'un aeroporto internazionale', 'oggetti presenti sull\'area di movimento che possono provocare danni agli aeromobili', 'l\'indicazione dei punti di ristoro', 'b', '2024-08-31 06:55:50', '2024-08-31 06:55:50'
+            ],
+            [
+                11, 11, 'Gli hangar sono:',
+                'rimesse per aeroplani', 'rimesse per i mezzi antincendio aeroportuali', 'impianti per il rifornimento degli aerei', 'a', '2024-08-31 06:58:54', '2024-08-31 06:58:54'
+            ],
+            [
+                12, 12, '360 ° indica:',
+                'il nord', 'il sud', 'l’oriente', 'a', '2024-08-31 06:59:37', '2024-08-31 06:59:37'
+            ],
+            [
+                13, 13, 'Secondo l\'alfabeto internazionale ICAO la lettera G si legge:',
+                'golf', 'golb', 'got', 'a', '2024-08-31 07:01:28', '2024-08-31 07:01:28'
+            ],
+            [
+                14, 14, 'L\'elevazione dell\'aeroporto è:',
+                'l\'elevazione del punto più alto dell\'area di atterraggio', 'l\'elevazione dell\'aeroporto rispetto al livello del mare', 'l\'altezza della torre di controllo', 'a', '2024-08-31 07:01:45', '2024-08-31 07:01:45'
+            ],
+            [
+                15, 15, 'Si definisce eliporto:',
+                'un\'area idonea alla partenza ed all\'approdo di aeromobili', 'un\'area idonea alla partenza ed all\'approdo di elicotteri', 'un\'area idonea alla partenza ed all\'approdo di navi', 'b', '2024-08-31 07:02:38', '2024-08-31 07:02:38'
+            ],
+            [
+                16, 16, 'Si definisce aviosuperficie:',
+                'un\'area idonea alla partenza ed all\'approdo di aeromobili, diversa dall\'aeroporto', 'un\'area idonea alla partenza ed all\'approdo di elicotteri', 'un\'area non idonea alla partenza ed all\'approdo di aeromobili', 'a', '2024-08-31 07:03:07', '2024-08-31 07:03:07'
+            ],
+            [
+                17, 17, 'Si definisce elisuperfice:',
+                'un\'aviosuperfice destinata all\'uso esclusivo degli elicotteri, che non sia un eliporto', 'un\'aviosuperfice destinata all\'uso esclusivo degli aeromobili', 'un eliporto', 'a', '2024-08-31 07:04:51', '2024-08-31 07:04:51'
+            ],
+            [
+                18, 18, 'Si definisce elisuperficie in elevazione:',
+                'un\'aviosuperfice ad uso esclusivo degli aeromobili', 'un\'elisuperficie posta su struttura avente elevazione di 2 mt o più', 'un\'elisuperficie posta su struttura avente elevazione di 3 mt o più', 'c', '2024-08-31 07:05:13', '2024-08-31 07:05:13'
+            ],
+            [
+                19, 19, 'Ai fini antincendio si definisce eliporto un\'area:',
+                'idonea alla partenza ed all’approdo di elicotteri, conforme alle prescrizioni di cui all’Annesso XIV ICAO.', 'idonea alla partenza ed all’approdo di elicotteri', 'idonea all’approdo di elicotteri diversa dall’aeroporto', 'a', '2024-08-31 07:05:32', '2024-08-31 07:05:32'
+            ],
+            [
+                20, 20, 'Per  aviosuperficie si intende un\'area:',
+                'idonea alla partenza ed all’approdo di elicotteri, diversa dall’aeroporto', 'idonea alla partenza ed all’approdo di aeromobili, diversa dall’aeroporto, non appartenente al demanio aeronautico', 'idonea alla partenza di aviatori', 'b', '2024-08-31 07:06:31', '2024-08-31 07:06:31'
+            ],
+            [
+                21, 21, 'Si definisce elisuperficie:',
+                'un’aviosuperficie destinata all\'uso esclusivo degli elicotteri, che non sia un eliporto', 'una superficie ad uso esclusivo degli aerei ultra leggeri', 'una superficie destinata al ricovero degli elicotteri, per manutenzione', 'a', '2024-08-31 07:06:50', '2024-08-31 07:06:50'
+            ],
+            [
+                22, 22, 'Si definisce elisuperficie in elevazione:',
+                'una superficie elevabile fino ad un massimo di 3 mt dal terreno', 'un\'elisuperficie posta su una nave da crociera', 'un\'elisuperficie posta su struttura avente elevazione di 3 mt o più rispetto al livello del terreno o del mare (se trattasi di piattaforma fissa in acqua)', 'c', '2024-08-31 07:07:18', '2024-08-31 07:07:18'
+            ],
+            [
+                23, 23, 'Un eliporto in ambito aeroportuale:',
+                'è situato  nelle immediate vicinanze di un aeroporto', 'è  situato all’interno di un aeroporto', 'è  situato all’esterno di un aeroporto', 'b', '2024-08-31 07:07:38', '2024-08-31 07:07:38'
+            ],
+            [
+                24, 24, 'Per “PISTA DI RULLAGGIO IN VOLO” si intende:',
+                'un sentiero determinato in superficie destinato al rullaggio in volo degli elicotteri', 'un sentiero determinato in superficie destinato allo spostamento in volo degli elicotteri', 'un sentiero determinato in superficie destinato allo spostamento a terra degli elicotteri', 'a', '2024-08-31 07:07:57', '2024-08-31 07:07:57'
+            ],
+            [
+                25, 25, 'Per “CLEARWAY” si intende:',
+                'un\'area circolare delimitata da striscia continua di colore giallo', 'un\'area libera da ostacoli', 'un\'area destinata al rifornimento di carburante', 'a', '2024-08-31 07:08:17', '2024-08-31 07:08:17'
+            ],
+            [
+                26, 26, 'Una piazzola per elicotteri è:',
+                'una zona destinata alla manutenzione degli elicotteri', 'una zona destinata al solo parcheggio degli elicotteri', 'una zona adatta al parcheggio, manovre di rullaggio, atterraggio e sollevamento degli elicotteri', 'c', '2024-08-31 07:08:33', '2024-08-31 07:08:33'
+            ],
+            [
+                27, 27, 'Per area di sicurezza si intende:',
+                'un\'area libera da ostacoli che circonda la FATO', 'un\'area  inibita alla sosta degli elicotteri', 'una zona di riunione in caso di emergenza', 'a', '2024-08-31 07:08:50', '2024-08-31 07:08:50'
+            ],
+            [
+                28, 28, 'Per “ HELIDECK” si intende:',
+                'il quaderno di bordo dell’elicottero', 'il ponte di volo per elicotteri', 'la zona dell’eliporto destinata agli impianti antincendio', 'b', '2024-08-31 07:09:07', '2024-08-31 07:09:07'
+            ],
+            [
+                29, 29, 'Per eliporto a livello del suolo si intende:',
+                'un eliporto situato sul terreno o sulla superficie dell’acqua', 'un eliporto situato su una struttura sopraelevata', 'un eliporto situato su una nave', 'a', '2024-08-31 07:09:24', '2024-08-31 07:09:24'
+            ],
+            [
+                30, 30, 'Per FATO si intende:',
+                'un\'area di avvicinamento finale e decollo', 'un sentiero di decollo', 'una distanza disponibile per l’atterraggio', 'a', '2024-08-31 07:09:41', '2024-08-31 07:09:41'
+            ],
+            [
+                31, 31, 'Per RTDOAH si intende:',
+                'un\'area di atterraggio e sollevamento', 'una distanza disponibile per il decollo', 'una distanza disponibile per il decollo abortito', 'c', '2024-08-31 07:10:02', '2024-08-31 07:10:02'
+            ],
+            [
+                32, 32, 'Per IMC si intende:',
+                'condizioni meteorologiche di volo strumentale', 'condizioni meteorologiche di volo a vista', 'distanza disponibile per il decollo', 'a', '2024-08-31 07:10:19', '2024-08-31 07:10:19'
+            ],
+            [
+                33, 33, 'Per “VMC” si intende:',
+                'distanza disponibile per il decollo abortito', 'distanza disponibile per il decollo', 'condizioni meteorologiche di  volo a vista', 'c', '2024-08-31 07:10:39', '2024-08-31 07:10:39'
+            ],
+            [
+                34, 34, 'Il collegamento radio tra Torre di controllo e sede VV.F. è:',
+                'obbligatorio', 'facoltativo', 'indifferente', 'a', '2024-08-31 07:11:01', '2024-08-31 07:11:01'
+            ],
+            [
+                35, 35, 'In aeroporto la dichiarazione dello stato di emergenza spetta:',
+                'al controllo del traffico', 'alla torre di controllo', 'a chiunque si accorge del verificarsi di un incidente', 'b', '2024-08-31 07:11:19', '2024-08-31 07:11:19'
+            ],
+            [
+                36, 36, 'Nello stato di allarme, previsto dal P.E.A., i soccorritori antincendio aeroportuali devono:',
+                'indossare i D.P.I., salire a bordo del mezzo di soccorso, uscire nel piazzale antistante la rimessa e stare in ascolto radio su frequenza T.W.R.', 'stare all\'interno delle rimesse con i D.P.I. indossati, pronti a salire a bordo dei mezzi', 'indossare i D.P.I., salire a bordo del mezzo di soccorso, posizionarsi sui raccordi e stare in ascolto radio su frequenza T.W.R.', 'a', '2024-08-31 07:11:36', '2024-08-31 07:11:36'
+            ],
+            [
+                37, 37, 'In caso d\'incidente di un aeromobile, all\'interno del sedime aeroportuale, i soccorritori antincendio aeroportuali devono:',
+                'rispettare i tempi di risposta pevisti dal P.E.A.', 'arrivare sul luogo dell\'incidente previa autorizzazione dell\' E.N.A.C.', 'arrivare sul luogo dell\'incidente previa autorizzazione del Gestore', 'a', '2024-08-31 07:11:54', '2024-08-31 07:11:54'
+            ],
+            [
+                38, 38, 'L’assistenza antincendio e soccorso prevede:',
+                'presenza di dotazioni antincendio e personale addetto, pronto ad intervenire in occasione di movimenti aerei', 'presenza di automezzi antincendio pronti ad intervenire', 'assistenza ai piloti dell’elicottero in occasione di decollo o approdo', 'a', '2024-08-31 07:12:19', '2024-08-31 07:12:19'
+            ],
+            [
+                39, 39, 'Il tempo di risposta negli eliporti con impianto antincendio fisso è:',
+                'nullo', 'due minuti', 'quattro minuti', 'a', '2024-08-31 07:12:41', '2024-08-31 07:12:41'
+            ],
+            [
+                40, 40, 'In un eliporto situato all’interno di aeroporto lo stato di allarme viene comunicato da:',
+                'TWR', 'Enac', 'agente di rampa', 'a', '2024-08-31 07:13:26', '2024-08-31 07:13:26'
+            ]
+        ],
+        [
+            'Modulo 3'
+        ],
+    ],
 
+    multiple_helitechnique_b4s: [
+        [
+            'module_4',
+        ],
+        [
+            [
+                1, 1, 'Si definisce lunghezza fuoritutto:',
+                'la massima lunghezza del rotore di un elicottero', 'la massima lunghezza fra i punti estremi dei pattini di un elicottero', 'la massima lunghezza fra i punti estremi dell’elicottero con i rotori in moto', 'c', '2024-08-31 07:15:04', '2024-08-31 07:15:04'
+            ],
+            [
+                2, 2, 'In caso di incendio, la direzione del vento:',
+                'è importante tenerne conto', 'non occorre tenerne conto', 'è ininfluente', 'a', '2024-08-31 07:15:49', '2024-08-31 07:15:49'
+            ],
+            [
+                3, 3, 'In un incidente aereo la priorità dell’intervento riguarda:',
+                'la salvezza dei passeggeri', 'la limitazione dei danni', 'il contenimento dell’incendio', 'a', '2024-08-31 07:16:19', '2024-08-31 07:16:19'
+            ],
+            [
+                4, 4, 'In caso di eliporto situato all\'interno di un aeroporto è necessario:',
+                'istituire un servizio di assistenza antincendio e di soccorso in aggiunta a quello aeroportuale', 'non istituire un servizio di assistenza antincendio e di soccorso in aggiunta a quello aeroportuale, purchè il livello di protezione sia adeguato all\'eliporto e il tempo di risposta non superi 2 minuti', 'in nessun caso occorre istituire un servizio antincendio e di soccorso oltre quello aeroportuale esistente', 'b', '2024-08-31 07:16:44', '2024-08-31 07:16:44'
+            ],
+            [
+                5, 5, 'L’equipaggiamento d’emergenza della categoria antincendio H1/H2 prevede:',
+                'nessuna accetta di soccorso', 'una accetta di soccorso', 'due accette di soccorso', 'b', '2024-08-31 07:17:03', '2024-08-31 07:17:03'
+            ],
+            [
+                6, 6, 'L’equipaggiamento d’emergenza nella categoria antincendio H3 prevede:',
+                'nessuna accetta di soccorso', 'una accetta di soccorso', 'due accette di soccorso', 'b', '2024-08-31 07:17:49', '2024-08-31 07:17:49'
+            ],
+            [
+                7, 7, 'L’equipaggiamento d’emergenza nella categoria antincendio H1/H2 prevede:',
+                'nessuna torcia elettrica', 'una torcia elettrica', 'due torce elettriche', 'c', '2024-08-31 07:18:07', '2024-08-31 07:18:07'
+            ],
+            [
+                8, 8, 'L’equipaggiamento d’emergenza nella categoria antincendio H3 prevede:',
+                'nessuna torcia elettrica', 'una torcia elettrica', 'due torce elettriche', 'c', '2024-08-31 07:18:31', '2024-08-31 07:18:31'
+            ],
+            [
+                9, 9, 'L’equipaggiamento d’emergenza nella categoria antincendio H1/H2 prevede:',
+                'una fune di sicurezza A 5 cm., lunga 15 metri', 'una fune di sicurezza A 5 cm., lunga 20 metri', 'nessuna fune di sicurezza', 'c', '2024-08-31 07:18:45', '2024-08-31 07:18:45'
+            ],
+            [
+                10, 10, 'L’equipaggiamento d’emergenza nella categoria antincendio H3 prevede:',
+                'una fune di sicurezza A 5 cm., lunga 15 metri', 'una fune di sicurezza A 5 cm., lunga 20 metri', 'nessuna fune di sicurezza', 'a', '2024-08-31 07:19:02', '2024-08-31 07:19:02'
+            ],
+            [
+                11, 11, 'L’equipaggiamento d’emergenza nella categoria antincendio H1/H2 prevede:',
+                'una tuta di avvicinamento completa', 'due tute di avvicinamento complete', 'quattro tute di avvicinamento complete', 'b', '2024-08-31 07:19:21', '2024-08-31 07:19:21'
+            ],
+            [
+                12, 12, 'L’equipaggiamento d’emergenza nella categoria antincendio H3 prevede:',
+                'una tuta di avvicinamento completa', 'due tute di avvicinamento complete', 'quattro tute di avvicinamento complete', 'c', '2024-08-31 07:19:38', '2024-08-31 07:19:38'
+            ],
+            [
+                13, 13, 'L’equipaggiamento d’emergenza nella categoria antincendio H1/H2 prevede:',
+                'un autorespiratore', 'due autorespiratori', 'quattro autorespiratori', 'b', '2024-08-31 07:19:57', '2024-08-31 07:19:57'
+            ],
+            [
+                14, 14, 'L’equipaggiamento d’emergenza nella categoria antincendio H3 prevede:',
+                'un autorespiratore', 'due autorespiratori', 'quattro autorespiratori', 'c', '2024-08-31 07:20:17', '2024-08-31 07:20:17'
+            ],
+            [
+                15, 15, 'In caso di sversamento di carburante la procedura prevede che il personale allertato:',
+                'non utilizzi acqua per lavare la superficie interessata', 'utilizzi l’acqua per diluire il combustibile', 'utilizzi liquido schiumogeno per evitare le emissioni di vapore del combustibile', 'a', '2024-08-31 07:20:37', '2024-08-31 07:20:37'
+            ],
+            [
+                16, 16, 'Per “RD” si intende:',
+                'la lunghezza totale dell’elicottero', 'il peso al decollo dell’elicottero', 'il diametro del rotore maggiore', 'c', '2024-08-31 07:21:01', '2024-08-31 07:21:01'
+            ],
+            [
+                17, 17, 'Per “D” si intende:',
+                'il diametro del rotore di coda', 'la massima dimensione dell’elicottero fuori tutto', 'il numero di pale del rotore maggiore', 'b', '2024-08-31 07:21:31', '2024-08-31 07:21:31'
+            ],
+            [
+                18, 18, 'In un elicottero, il serbatoio del carburante generalmente è ubicato:',
+                'sotto la fusoliera o nei pressi del motore', 'lungo la coda nei pressi del rotore', 'sotto il rotore principale', 'a', '2024-08-31 07:22:03', '2024-08-31 07:22:03'
+            ],
+            [
+                19, 19, 'Negli eliporti/elisuperfici in elevazione, qualora si utilizzi l\'impianto di estinzione fisso, la gittata degli estinguenti principali deve essere continua per un tempo:',
+                'non inferiore a 15 min', 'di almeno 10 min', 'di 5 min', 'a', '2024-08-31 07:22:18', '2024-08-31 07:22:18'
+            ],
+            [
+                20, 20, 'Nell\'avvicinamento ad un elicottero con motore acceso è consigliabile intervenire:',
+                'anteriormente', 'posteriormente', 'lateralmente', 'a', '2024-08-31 07:22:37', '2024-08-31 07:22:37'
+            ],
+        ],
+        [
+            'Modulo 4'
+        ],
+    ],
+
+    multiple_firstaid_b5s: [
+        [
+            'module_5'
+        ],
+        [
+            [
+                1, 1, 'Prima di effettuare la respirazione artificiale è necessario che:',
+                'le vie aeree siano libere', 'non ci siano ferite da taglio', 'sia disponibile ossigeno in bombole', 'a', '2024-08-31 07:24:02', '2024-08-31 07:24:02'
+            ],
+            [
+                2, 2, 'La Rianimazione Cardio Polmonare si effettua con la persona in posizione:',
+                'come la si trova, se si sospetta un trauma', 'supina', 'semi seduta', 'b', '2024-08-31 07:24:42', '2024-08-31 07:24:42'
+            ],
+            [
+                3, 3, 'Una volta garantita la pervietà delle vie aeree nell\'adulto occorre valutare:',
+                'lo stato di coscienza', 'la presenza di un respiro agonico', 'se è presente l\'attività respiratoria, palpare il polso carotideo e verificare se sono presenti segni di circolo', 'c', '2024-08-31 07:42:52', '2024-08-31 07:42:52'
+            ],
+            [
+                4, 4, 'In una vittima adulta non cosciente, se le vie aeree sembrano ostruite dopo il primo tentativo di ventilazione, il soccorritore deve:',
+                'riposizionare il capo e provare a ventilare', 'iniziare le compressioni toraciche', 'valutare la presenza di ostruzione da corpo estraneo', 'a', '2024-08-31 07:43:21', '2024-08-31 07:43:21'
+            ],
+            [
+                5, 5, 'In quanto tempo un arresto respiratorio nell\'adulto non trattato porta ad arreso cardiorespiratorio:',
+                '30 secondi', 'alcuni minuti', '10 minuti', 'b', '2024-08-31 07:43:42', '2024-08-31 07:43:42'
+            ],
+            [
+                6, 6, 'La giusta sequenza delle fasi della \"catena della sopravvivenza\" nell\'adulto è:',
+                'BLS precoce - riconoscimento e allarme precoce - defibrillazione precoce - soccorso avanzato precoce', 'defibrillazione precoce - riconoscimento e allarme precoce - BLS precoce - soccorso avanzato precoce', 'riconoscimento e allarme precoce - BLS precoce - defibrillazione precoce - soccorso avanzato precoce', 'c', '2024-08-31 07:44:01', '2024-08-31 07:44:01'
+            ],
+            [
+                7, 7, 'Dopo aver raffreddato e coperto un\'ustione, il trattamento successivo è:',
+                'difendere la vittima dall\'ipotermia e somministrare ossigeno', 'frizionare la parte lesa', 'posizionare il laccio emostatico', 'a', '2024-08-31 07:44:18', '2024-08-31 07:44:18'
+            ],
+            [
+                8, 8, 'I segnali di allarme dell\'infarto cardiaco nell\'adulto sono:',
+                'dolore o senso di oppressione al centro del torace o localizzato al collo, alla mandibola o in corrispondenza dello stomaco, sudorazione fredda, nausea, sensazione di \"mancanza di respiro\"', 'dolore anche di entità modesta, riferito anche come difficoltà respiratoria, non necessariamente sotto sforzo', 'tutti i precedenti', 'c', '2024-08-31 07:44:55', '2024-08-31 07:44:55'
+            ],
+            [
+                9, 9, 'Il Basic Life Support comprende:',
+                'il pronto riconoscimento dell\'assenza di coscienza respiro e circolo, l\'attivazione precoce del sistema di soccorso', 'l\'esecuzione della RCP in caso di arresto cardiaco', 'tutti i precedenti', 'c', '2024-08-31 07:45:20', '2024-08-31 07:45:20'
+            ],
+            [
+                10, 10, 'Le manovre di Rianimazione Cardio Polmonare (R.P.C.) nell\'adulto si effettuano:',
+                'quando la vittima è cosciente, ma lamenta un forte dolore retro sternale', 'in mancanza della sola funzione \"coscienza\"', 'sempre a seguito di una valutazione', 'c', '2024-08-31 07:45:36', '2024-08-31 07:45:36'
+            ],
+            [
+                11, 11, 'Il \"gasping\" o respiro agonico:',
+                'è un tipo di respirazione inefficace che rende indicata la respirazione artificiale', 'è un tipo di respirazione poco efficace', 'è indice di crisi asmatica', 'a', '2024-08-31 07:46:01', '2024-08-31 07:46:01'
+            ],
+            [
+                12, 12, 'Per poter effettuare un massaggio cardiaco esterno, efficace nell\'adulto, occorre:',
+                'essere in due operatori', 'comprimere sulla metà dello sterno, verso la colonna vertebrale, facendo abbassare lo stesso almeno 4 - 5 centimetri', 'ventilare con immediata sequenzialità per evitare il ristagno del sangue', 'b', '2024-08-31 07:46:19', '2024-08-31 07:46:19'
+            ],
+            [
+                13, 13, 'La presenza della coscienza in una vittima adulta, in cui si esclude la possibilità che sia traumatizzata, si effettua:',
+                'palpando il polso carotideo', 'osservando i segni di circolo e facendo GAS', 'chiamando e scuotendo la vittima.', 'c', '2024-08-31 07:46:38', '2024-08-31 07:46:38'
+            ],
+            [
+                14, 14, 'La \"catena della sopravvivenza\":',
+                'è utile a tutti i soccorritori: sottolinea l\'importanza della sequenzialità e precocità degli interventi', 'è utile ai sistema di soccorso per attivare il mezzo più adatto', 'serve al soccorritore esperto per capire la patologia della vittima', 'a', '2024-08-31 07:47:05', '2024-08-31 07:47:05'
+            ],
+            [
+                15, 15, 'Il pallone autoespandibile è utile per:',
+                'apportare alla vittima di arresto respiratorio una percentuale adeguata di ossigeno', 'riuscire a ventilare anche in presenza di ostruzione profonda delle vie aeree', 'espandere con successo i polmoni', 'a', '2024-08-31 07:47:53', '2024-08-31 07:47:53'
+            ],
+            [
+                16, 16, 'Le insufflazioni con il sistema pallone - maschera nell\'adulto:',
+                'si applicano alla frequenza di 30 ogni 2 minuti', 'possono provocare distensione gastrica se la maschera non aderisce perfettamente al volto', 'possono provocare distensione gastrica e rigurgito se il capo non è ipresteso', 'c', '2024-08-31 07:48:10', '2024-08-31 07:48:10'
+            ],
+            [
+                17, 17, 'L\'obiettivo fondamentale del BLS è:',
+                'il ripristino delle funzioni vitali', 'la prevenzione del danno anossico celebrale', 'la prevenzione della morte cardiaca improvvisa', 'b', '2024-08-31 07:48:26', '2024-08-31 07:48:26'
+            ],
+            [
+                18, 18, 'La percentuale di ossigeno che si può ottenere collegando il pallone autoespandibile alla fonte di ossigeno senza il reservoire è circa il:',
+                '21%', '16%', '40-50%', 'c', '2024-08-31 07:49:01', '2024-08-31 07:49:01'
+            ],
+            [
+                19, 19, 'Il più efficace sistema di ventilazione artificiale è:',
+                'bocca a bocca', 'pallone, maschera, ossigeno, reservoire', 'pallone maschera reservoire', 'b', '2024-08-31 07:49:22', '2024-08-31 07:49:22'
+            ],
+            [
+                20, 20, 'Quale delle seguenti affermazioni è vera:',
+                'una persona che non ha circolo può anche non respirare', 'una persona che non ha circolo non può avere un attività respiratoria', 'una persona che non respira non ha mai attività circolatoria', 'b', '2024-08-31 07:49:42', '2024-08-31 07:49:42'
+            ],
+            [
+                21, 21, 'La cannula faringea o di Guédel serve:',
+                'per agevolare il mantenimento della pervietà delle vie aeree', 'per asportare eventuali corpi estranei', 'al posto dell\'iperestensione', 'a', '2024-08-31 07:49:59', '2024-08-31 07:49:59'
+            ],
+            [
+                22, 22, 'La ventilazione con pallone autoespandibile, senza alcun ausilio, somministra una percentuale di ossigeno pari al:',
+                '100%', 'circa 21%', 'dipende dalla frequenza di respirazione', 'b', '2024-08-31 07:50:20', '2024-08-31 07:50:20'
+            ],
+            [
+                23, 23, 'Il DAE in un arresto cardiaco, di un individuo adulto, và utilizzato:',
+                'successivamente alla valutazione negativa dell\'assenza di respiro e segni di vita, dopo aver eseguito 2 minuti di RCP', 'subito dopo aver garantito la pervietà delle vie aeree', 'successivamente alla valutazione dell\'assenza di coscienza', 'a', '2024-08-31 07:50:37', '2024-08-31 07:50:37'
+            ],
+            [
+                24, 24, 'Se il DAE non funziona:',
+                'chiedi un altro DAE al sistema di emergenza', 'inizi la RCP', 'tutte le precedenti', 'c', '2024-08-31 07:50:59', '2024-08-31 07:50:59'
+            ],
+            [
+                25, 25, 'E\' necessario sospendere la RCP e non toccare la vittima durante l\'analisi del DAE perché:',
+                'si mantiene un circolo efficace', 'si possono alterare i dati che l\'apparecchio sta analizzando', 'si può essere investiti da una scarica elettrica fortissima', 'c', '2024-08-31 07:51:18', '2024-08-31 07:51:18'
+            ],
+            [
+                26, 26, 'In caso di vittima incosciente, ma con respiro e polso presenti:',
+                'non intervenire con il DAE', 'scoprire il torace della vittima e posizionare comunque gli elettrodi del DAE', 'accendere l\'apparecchio, collegare il connettore, ma non posizionare gli elettrodi', 'a', '2024-08-31 07:51:36', '2024-08-31 07:51:36'
+            ],
+            [
+                27, 27, 'Il DAE può essere efficace nel caso che la vittima abbia:',
+                'dolore toracico e perdita di coscienza', 'fibrillazione ventricolare o tachicardia ventricolare senza polso', 'arresto respiaratorio', 'b', '2024-08-31 07:52:03', '2024-08-31 07:52:03'
+            ],
+            [
+                28, 28, 'I soggetti vittime di eventi traumatici muoiono principalmente:',
+                'per mancanza di ossigeno e aumento di anidride carbonica', 'perché non vengono trattati correttamente dentro l\'ospedale', 'per le infezioni', 'a', '2024-08-31 07:52:24', '2024-08-31 07:52:24'
+            ],
+            [
+                29, 29, 'Entro un\'ora dall\'evento traumatico, per aumentare le possibilità di sopravvivenza della vittima dovremmo:',
+                'immobilizzare il rachide cervicale', 'ricoverare la vittima in un qualsiasi ospedale', 'eseguire il triage', 'b', '2024-08-31 07:52:53', '2024-08-31 07:52:53'
+            ],
+            [
+                30, 30, 'Non si mette la testa in posizione neutra quando:',
+                'la manovra suscita estrema dolorabilità', 'la vittima non è cosciente', 'la vittima ha la trachea deviata', 'a', '2024-08-31 07:53:10', '2024-08-31 07:53:10'
+            ],
+            [
+                31, 31, 'Quale domanda faresti alla vittima per valutarne lo stato di coscienza?',
+                'quanti anni ha', 'si ricorda cosa è successo', 'si ricorda dove abita', 'b', '2024-08-31 07:53:36', '2024-08-31 07:53:36'
+            ],
+            [
+                32, 32, 'La mancata motilità degli arti:',
+                'presume sempre lesione midollare', 'si segnala e si considera un parametro importante da riferire al 118', 'non è un parametro importante per l\'équipe di base', 'b', '2024-08-31 07:54:42', '2024-08-31 07:54:42'
+            ],
+            [
+                33, 33, 'Sono considerati segni e sintomi di trauma vertebrale:',
+                'formicolio e mancata sensibilità agli arti inferiori', 'dolore al dorso', 'sia A che B', 'c', '2024-08-31 07:55:23', '2024-08-31 07:55:23'
+            ],
+            [
+                34, 34, 'E\' considerato soggetto a rischio di trauma grave:',
+                'vittima annegata', 'vittima di ictus', 'ciclista che giace a 7 metri dalla bicicletta', 'c', '2024-08-31 07:55:40', '2024-08-31 07:55:40'
+            ],
+            [
+                35, 35, 'La principale causa di morte in caso di evento traumatico è:',
+                'la rottura del cranio', 'la perdita di coscienza', 'la mancanza d\'ossigeno', 'c', '2024-08-31 07:56:07', '2024-08-31 07:56:07'
+            ],
+            [
+                36, 36, 'L\'Ora d\'oro, è un concetto che si riferisce a:',
+                'la necessità di centralizzare una vittima in un centro attrezzato entro un\'ora dall\'evento', 'la possibilità di posticipare di un\' ora circa il trattamento avanzato a vantaggio di un efficiente soccorso di base', 'la necessità di valutare la vittima di un evento traumatico incidentale entro un\'ora dal sinistro', 'a', '2024-08-31 07:59:11', '2024-08-31 07:59:11'
+            ],
+            [
+                37, 37, 'Indica la giusta sequenza operativa in riferimento a quanto espresso con \"la Catena della Sopravvivenza nel traumatizzato\":',
+                'allarme precoce, rianimazione precoce, centralizzazione, triage', 'allarme precoce, triage sul posto, trattamento preospedaliero, trattamento ospedaliero centralizzazione', 'allarme precoce, triage sul posto, trattamento preoospedaliero, centralizzazione, trattamento ospedaliero', 'c', '2024-08-31 07:59:32', '2024-08-31 07:59:32'
+            ],
+            [
+                38, 38, 'Quali operazioni compi prioritariamente su un soggetto vittima di evento traumatico incidentale privo di coscienza:',
+                'immobilizzi la testa, valuti la pervietà delle vie aeree', 'immobilizzi la testa, chiami e scuoti la vittima e allerti la Centrale operativa 1-1-8 facendo portare un Defibrillatore semi Automatico Esterno', 'allerti la Centrale Operativa 1-1-8, allinei e scopri il torace, valuti la presenza di respiro spontaneo', 'a', '2024-08-31 08:00:29', '2024-08-31 08:00:29'
+            ],
+            [
+                39, 39, 'La vittima cosciente deve essere:',
+                'trattata come quella incosciente, la procedura non cambia', 'approcciata considerando l\'aspetto relazionale, informandola prima di agire', 'stabilizzata, poi valutata', 'b', '2024-08-31 08:00:59', '2024-08-31 08:00:59'
+            ],
+            [
+                40, 40, 'Il collare cervicale è:',
+                'un dispositivo per l\'immobilizzazione totale del rachide cervicale', 'un presidio non indispensabile ai fini dell\'immobilizzazione', 'un dispositivo che aiuta ad immobilizzare il rachide cervicale della vittima', 'c', '2024-08-31 09:42:21', '2024-08-31 09:42:21'
+            ],
+            [
+                41, 41, 'La destinazione ospedaliera (centralizzazione) della vittima di un evento traumatico è decisa:',
+                'dalla Centrale Operativa 1-1-8', 'dalla Centrale Operativa 1-1-5 sulla scorta dell\'esperienza e della conoscenza del territorio di competenza', 'dal personale sanitario sul posto', 'a', '2024-08-31 09:42:45', '2024-08-31 09:42:45'
+            ],
+            [
+                42, 42, 'Sono considerati segni di possibile trauma vertebrale:',
+                'il trauma al di sopra della clavicola', 'la copiosa emorragia all\'arto superiore destro', 'la ferita sotto il ginocchio', 'a', '2024-08-31 09:43:04', '2024-08-31 09:43:04'
+            ],
+            [
+                43, 43, 'La barella scoop bi-valva o \"cucchiaio\", deve essere utilizzata per:',
+                'l\'immobilizzazione di vittime di trauma', 'la raccolta di soggetti vittima non traumatizzati', 'l\'immobilizzazione parziale di vittime di trauma', 'b', '2024-08-31 09:43:21', '2024-08-31 09:43:21'
+            ],
+            [
+                44, 44, 'Per il posizionamento della vittima sulla barella scoop bi-valva o \"cucchiaio\", occorrono:',
+                'due persone addestrate', 'tre persone addestrate', 'quattro persone addestrate', 'b', '2024-08-31 09:43:45', '2024-08-31 09:43:45'
+            ],
+            [
+                45, 45, 'La tavola spinale è:',
+                'un dispositivo per l\'immobilizzazione parziale delle vittime di evento traumatico', 'un dispositivo che deve essere utilizzato per l\'immobilizzazione della vittima di evento traumatico incidentale', 'l\'unico strumento idoneo per il trasporto di qualsiasi tipologia di feriti', 'b', '2024-08-31 09:44:22', '2024-08-31 09:44:22'
+            ],
+            [
+                46, 46, 'La manovra di sollevamento a ponte è:',
+                'una tecnica di movimentazione ordinaria della vittima di evento traumatico non grave', 'una tecnica per girare la vittima quando non si presenta supina (faccia verso l\'alto)', 'una manovra di emergenza, che si attua quando le altre tecniche di movimentazione risultano impossibili o non sicure per la vittima', 'c', '2024-08-31 09:44:41', '2024-08-31 09:44:41'
+            ],
+            [
+                47, 47, 'In caso di sospetta frattura alla colonna vertebrale bisogna:',
+                'procedere allo spostamento solo con tecniche adeguate', 'trascinare l\'infortunato sopra un piano che deve essere assolutamente rigido e poi procedere al trasporto fino all\'ospedale più vicino', 'non fare assolutamente nulla fino all\'arrivo di una equipe sanitaria', 'a', '2024-08-31 09:44:58', '2024-08-31 09:44:58'
+            ],
+            [
+                48, 48, 'In caso di sospetta lesione vertebrale è necessario:',
+                'applicare una steccabenda a depressione', 'movimentare l\'infortunato con un asse spinale', 'mettere la vittima in posizione laterale di sicurezza', 'b', '2024-08-31 09:45:17', '2024-08-31 09:45:17'
+            ],
+            [
+                49, 49, 'Il triage prevede:',
+                'la valutazione rapida delle funzioni vitali, il rapido trattamento e l\'attribuzione di un codice colore', 'l\'immediata stabilizzazione dei feriti più gravi', 'il trattamento sul campo delle vittime in arresto cardiorespiratorio', 'a', '2024-08-31 09:45:37', '2024-08-31 09:45:37'
+            ],
+            [
+                50, 50, 'Le vittime con lesioni che ne mettano immediatamente a rischio la vita sono identificate con il codice',
+                'giallo', 'rosso', 'verde', 'b', '2024-08-31 09:45:55', '2024-08-31 09:45:55'
+            ],
+            [
+                51, 51, 'Le vittime in grado di camminare sono identificate con il codice:',
+                'verde', 'giallo', 'rosso', 'a', '2024-08-31 09:46:34', '2024-08-31 09:46:34'
+            ],
+            [
+                52, 52, 'Gli oggetti penetranti vanno:',
+                'immediatamente estratti', 'fissati con un bendaggio e cerotto', 'lasciati così, senza alcun trattamento, se l\'Ospedale è a più di 20 minuti', 'b', '2024-08-31 09:47:20', '2024-08-31 09:47:20'
+            ],
+            [
+                53, 53, 'Le fratture ossee possono essere:',
+                'composte, scomposte, esposte', 'piccole, medie, gravi', 'verticali, diagonali, orizzontali', 'a', '2024-08-31 09:48:03', '2024-08-31 09:48:03'
+            ],
+            [
+                54, 54, 'In presenza di una vittima con emorragia che si presenti in piedi il soccorritore deve:',
+                'utilizzare il laccio emostatico', 'ospedalizzare velocemente', 'far sdraiare e iniziare la procedura prevista', 'c', '2024-08-31 09:48:24', '2024-08-31 09:48:24'
+            ],
+            [
+                55, 55, 'I metodi utilizzabili per arrestare un\'emorragia esterna sono:',
+                'solo il laccio, a valle della lesione', 'laccio emostatico, punti di compressione, pressione diretta e sollevamento dell\'arto', 'pressione diretta, sollevamento dell\'arto, punti di compressione e, per ultimo, laccio emostatico', 'c', '2024-08-31 09:48:44', '2024-08-31 09:48:44'
+            ],
+            [
+                56, 56, 'Alcuni segni di un\'importante perdita di sangue sono:',
+                'aumento del livello di coscienza', 'aumento della frequenza cardiaca e respiratoria, scomparsa del polso radiale, declino del livello di coscienza', 'iposensibilità agli arti', 'b', '2024-08-31 09:49:20', '2024-08-31 09:49:20'
+            ],
+            [
+                57, 57, 'In caso di emorragia arteriosa, qualora sia indispensabile utilizzare il laccio emostatico, esso va posizionato:',
+                'all\'altezza dell\'omero o del femore', 'subito a monte della ferita', 'subito a valle della ferita', 'b', '2024-08-31 09:49:43', '2024-08-31 09:49:43'
+            ],
+            [
+                58, 58, 'Per un corretto trattamento delle ferite è necessario:',
+                'ripulire con acqua corrente o soluzione fisiologica', 'disinfettare e applicare una medicazione', 'sia A che B', 'c', '2024-08-31 09:50:01', '2024-08-31 09:50:01'
+            ],
+            [
+                59, 59, 'In caso di grave emorragia, il trattamento é:',
+                'diverso a seconda che l\'emorragia sia arteriosa o venosa', 'quello previsto, indipendentemente dall\'origine arteriosa o venosa', 'lasciato alla discrezione dell\'operatore', 'b', '2024-08-31 09:50:25', '2024-08-31 09:50:25'
+            ],
+            [
+                60, 60, 'Il primo trattamento di un\' ustione è:',
+                'raffreddare con acqua o soluzione fisiologica e coprire con teli sterili', 'applicare pomata lenitiva', 'bucare e spremere le bolle', 'a', '2024-08-31 09:54:46', '2024-08-31 09:54:46'
+            ],
+            [
+                61, 61, 'La classificazione delle ustioni in gradi (1°, 2° e 3°) riguarda:',
+                'la temperatura che ha causato l\'ustione stessa', 'la parte corporea interessata', 'la profondità delle ustioni', 'c', '2024-08-31 09:55:05', '2024-08-31 09:55:05'
+            ],
+            [
+                62, 62, 'In caso di ustione, i vestiti adesi vanno:',
+                'rimossi manualmente per evitare infezioni', 'lasciati attaccati alla cute, raffreddati e coperti con teli sterili o almeno puliti', 'rimossi utilizzando le apposite pinze', 'b', '2024-08-31 09:55:32', '2024-08-31 09:55:32'
+            ],
+            [
+                63, 63, 'In caso di ustione elettrica, il soccorritore deve:',
+                'iniziare immediatamente il BLSD', 'praticare immediatamente solo BLS, senza usare il DAE', 'allontanare la vittima dalla fonte elettrica e valutare le funzioni vitali', 'c', '2024-08-31 09:56:02', '2024-08-31 09:56:02'
+            ],
+            [
+                64, 64, 'In caso di ustione chimica ai bulbi oculari, è necessario:',
+                'lavare la parte con soluzione fisiologica o prodotti specifici', 'non agire assolutamente sulla parte lesa e trasportare la vittima immediatamente in ospedale', 'chiudere entrambi gli occhi con garze asciutte', 'a', '2024-08-31 09:56:20', '2024-08-31 09:56:20'
+            ],
+            [
+                65, 65, 'In caso di ustione chimica, le prime cose da fare sono:',
+                'allontanare la vittima dall\'agente ustionante e lavare con acqua abbondantemente, fino alla totale rimozione dell\'agente ustionante', 'non agire mai sulla parte lesa e trasportare la vittima immediatamente in ospedale', 'fasciare stretto per impedire l\'allargamento dell\'ustione', 'a', '2024-08-31 09:56:36', '2024-08-31 09:56:36'
+            ],
+        ],
+        [
+            'Modulo 5'
+        ],
+    ],
 
 
 });

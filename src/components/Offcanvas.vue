@@ -110,6 +110,7 @@ export default {
 
 <style scoped>
 p#offcanvas_box {
+    background-color: white;
     display: inline-block;
     padding: .25rem;
     box-shadow: 1px 2px black;
@@ -139,11 +140,11 @@ div.div_wrapper {
         }
 
         span.span-activate {
-            color: blue;
+            color: red;
         }
 
         span.span-deactivate {
-            color: red;
+            color: blue;
         }
     }
 }
