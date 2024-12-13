@@ -3,13 +3,22 @@ import { reactive } from 'vue';
 export const state = reactive({
 
     /* modules variables */
+
+    // Multiple answers variables
+
     module_1: true,
     module_2: true,
     module_3: true,
     module_4: true,
     module_5: true,
 
+    // True or false variables
+
+    module_tf_1: true,
+
     /* modules data */
+
+    // Multiple answers questions
 
     multiple_prevenction_b1s: [
         [
@@ -976,5 +985,376 @@ export const state = reactive({
         ],
     ],
 
+    // True or false Questions
 
+    tf_prevenction_b1s: [
+        [
+            'module_1'
+        ],
+        [
+            [
+                1, 1, 'I  D.P.I. sono dispositivi di protezione individuale', 1, '2024-09-04 10:12:33', '2024-09-04 10:12:33'
+            ],
+            [
+                2, 2, 'La protezione completa si ottiene indossando: casco - giaccone da interento - stivali - autorespiratore', 0, '2024-09-04 12:13:27', '2024-09-04 12:13:27'
+            ],
+            [
+                3, 3, 'I guanti non fanno parte dell\'equipaggiamento da intervento', 0, '2024-09-04 12:13:49', '2024-09-04 12:13:49'
+            ],
+            [
+                4, 4, 'Gli estintori a polvere non hanno bisogno di un sistema di pressurizzazione', 0, '2024-09-04 12:13:55', '2024-09-04 12:13:55'
+            ],
+            [
+                5, 5, 'Le bombole dell\'autorespiratore a circuito aperto sono caricate con aria a 200/300 bar', 1, '2024-09-04 12:14:01', '2024-09-04 12:14:01'
+            ],
+            [
+                6, 6, 'Le bombole dell\'autorespiratore a circuito aperto sono caricate con ossigeno a 200/300 bar', 0, '2024-09-04 12:14:06', '2024-09-04 12:14:06'
+            ],
+            [
+                7, 7, 'In un autorespiratore il segnale acustico di avvertimento bassa pressione inizia a circa 50 atm', 1, '2024-09-04 12:14:12', '2024-09-04 12:14:12'
+            ],
+            [
+                8, 8, 'In un autorespiratore il segnale acustico di avvertimento bassa pressione inizia a circa 100 atm', 0, '2024-09-04 12:14:17', '2024-09-04 12:14:17'
+            ],
+            [
+                9, 9, 'La pressione erogata in maschera è di poco superiore alla pressione atmosferica', 1, '2024-09-04 12:14:25', '2024-09-04 12:14:25'
+            ],
+            [
+                10, 10, 'Il segnale acustico di allarme si attiva quando il manometro dell\'autorespiratore segna circa 5 bar', 0, '2024-09-04 12:14:36', '2024-09-04 12:14:36'
+            ],
+            [
+                11, 11, 'L\'autorepiratore non è necessario in presenza di una percentuale di ossigeno pari al 10%', 0, '2024-09-04 12:14:43', '2024-09-04 12:14:43'
+            ],
+            [
+                12, 12, 'Il servizio antincendio deve essere dotato di tute di avvicinamento al fuoco, complete di guanti ed elmetto con visiera atermica', 1, '2024-09-04 12:14:49', '2024-09-04 12:14:49'
+            ],
+            [
+                13, 13, 'Affinchè possa avvenire una combustione devono essere contemporaneamente presenti: il combustibile, il comburente e la temperatura idonea', 1, '2024-09-04 12:14:59', '2024-09-04 12:14:59'
+            ],
+            [
+                14, 14, 'La combustione avviene ogni qualvolta vi sia contatto fra un combustibile ed un comburente', 0, '2024-09-04 12:15:08', '2024-09-04 12:15:08'
+            ],
+            [
+                15, 15, 'Un combustibile, a temperatura superiore a quella di accensione, brucia se è a contatto con l\'aria', 1, '2024-09-04 12:15:14', '2024-09-04 12:15:14'
+            ],
+            [
+                16, 16, 'Il tempo di combustione libera è quello intercorso fra l\'accensione e l\'avvenuto spegnimento', 0, '2024-09-04 12:15:22', '2024-09-04 12:15:22'
+            ],
+            [
+                17, 17, 'In caso di incidente, i tempi di combustione libera devono essere i più lunghi possibile', 0, '2024-09-04 12:18:24', '2024-09-04 12:18:24'
+            ],
+            [
+                18, 18, 'La combustione dei liquidi infiammabili avviene quando i vapori combustibili sono miscelati con l\'ossigeno dell\'aria in concentrazione compresa nel campo di infiammabilità', 0, '2024-09-04 12:18:31', '2024-09-04 12:18:31'
+            ],
+            [
+                19, 19, 'L\'incendio è una reazione chimica che avviene con sviluppo di calore', 1, '2024-09-04 12:18:38', '2024-09-04 12:18:38'
+            ],
+            [
+                20, 20, 'La classe A dei combustibili si riferisce ai solidi infiammabili', 1, '2024-09-04 12:18:44', '2024-09-04 12:18:44'
+            ],
+            [
+                21, 21, 'La classe B dei combustibili si riferisce ai liquidi infiammabili',
+                1, '2024-09-04 12:18:51', '2024-09-04 12:18:51'
+            ],
+            [
+                22, 22, 'La classe C dei combustibili si riferisce ai gas infiammabili',
+                1, '2024-09-04 12:18:59', '2024-09-04 12:18:59'
+            ],
+            [
+                23, 23, 'La classe D dei combustibili si riferisce ai metalli infiammabili',
+                1, '2024-09-04 12:19:06', '2024-09-04 12:19:06'
+            ],
+            [
+                24, 24, 'La classe D dei combustibili si riferisce ai gas infiammabili',
+                0, '2024-09-04 12:19:13', '2024-09-04 12:19:13'
+            ],
+            [
+                25, 25, 'La classe C dei combustibili si riferisce ai solidi infiammabili',
+                0, '2024-09-04 12:19:21', '2024-09-04 12:19:21'
+            ],
+            [
+                26, 26, 'La classe A dei combustibili si riferisce ai liquidi infiammabili',
+                0, '2024-09-04 12:19:27', '2024-09-04 12:19:27'
+            ],
+            [
+                27, 27, 'Per estinguere un incendio si deve ricorrere ad uno dei seguenti sistemi: esaurimento del combustibile, soffocamento, raffreddamento',
+                1, '2024-09-04 12:21:16', '2024-09-04 12:21:16'
+            ],
+            [
+                28, 28, 'I vapori di un liquido infiammabile sono definiti comburenti',
+                0, '2024-09-04 12:21:30', '2024-09-04 12:21:30'
+            ],
+            [
+                29, 29, 'Separando il comburente dal combustibile viene a mancare uno dei tre elementi essenziali e, pertanto, la combustione termina',
+                1, '2024-09-04 12:22:16', '2024-09-04 12:22:16'
+            ],
+            [
+                30, 30, 'Secondo la Norma Europea EN2 la classificazione dei fuochi è la seguente: Classe A fuochi di materiali solidi Classe B fuochi di liquidi o di solidi liquefacibili Classe C fuochi di gas Classe D fuochi di metalli (magnesio, potassio, fosforo, sodio, ecc.)',
+                1, '2024-09-04 12:22:24', '2024-09-04 12:22:24'
+            ],
+            [
+                31, 31, 'Per scoppio si intende un fenomeno puramente fisico o meccanico senza produzione di fiamme e calore',
+                1, '2024-09-04 12:22:30', '2024-09-04 12:22:30'
+            ],
+            [
+                32, 32, 'L\'esplosione è un processo fisico di violento ed istantaneo innalzamento delle pressioni che si irradiano dal centro di esplosione',
+                1, '2024-09-04 12:22:37', '2024-09-04 12:22:37'
+            ],
+            [
+                33, 33, 'I prodotti della combustione sono sempre gli stessi indipendentemente dalla sostanza che brucia',
+                0, '2024-09-04 12:22:44', '2024-09-04 12:22:44'
+            ],
+            [
+                34, 34, 'Per far avvenire una combustione occorre sempre fornire calore',
+                1, '2024-09-04 12:22:50', '2024-09-04 12:22:50'
+            ],
+            [
+                35, 35, 'La temperatura di infiammabilità è la temperatura minima alla quale i liquidi infiammabili emettono vapori in quantità tali da incendiarsi in caso d\'innesco',
+                1, '2024-09-04 12:22:58', '2024-09-04 12:22:58'
+            ],
+            [
+                36, 36, 'In una sostanza liquida infiammabile concorrono all\'incendio i vapori emessi dall\'evaporazione della sostanza stessa',
+                1, '2024-09-04 12:23:04', '2024-09-04 12:23:04'
+            ],
+            [
+                37, 37, 'Gli agenti estinguenti aeroportuali si dividono in: principali e complementari',
+                1, '2024-09-04 12:23:13', '2024-09-04 12:23:13'
+            ],
+            [
+                38, 38, 'L\'estinguente principale è il liquido schiumogeno',
+                0, '2024-09-04 12:26:14', '2024-09-04 12:26:14'
+            ],
+            [
+                39, 39, 'L\'estinguente principale è l\'acqua per la produzione di schiuma',
+                1, '2024-09-04 12:26:49', '2024-09-04 12:26:49'
+            ],
+            [
+                40, 40, 'Gli estinguenti complementari ammessi sono esclusivamente la CO2 e le polveri chimiche',
+                0, '2024-09-04 12:26:56', '2024-09-04 12:26:56'
+            ],
+            [
+                41, 41, 'L\'estinguente complementare ammesso dalla normativa ICAO è la polvere chimica',
+                1, '2024-09-04 12:27:01', '2024-09-04 12:27:01'
+            ],
+            [
+                42, 42, 'Per normativa gli agenti estinguenti principali e complementari devono essere compatibili fra loro',
+                1, '2024-09-04 12:27:07', '2024-09-04 12:27:07'
+            ],
+            [
+                43, 43, 'Gli halons sono tra i migliori estinguenti complementari usati in aeroporto',
+                0, '2024-09-04 12:27:14', '2024-09-04 12:27:14'
+            ],
+            [
+                44, 44, 'Le polveri estinguenti polivalenti non esistono',
+                0, '2024-09-04 12:27:20', '2024-09-04 12:27:20'
+            ],
+            [
+                45, 45, 'L\'acqua, come sostanza estinguente, agisce per raffreddamento, soffocamento e per azione meccanica',
+                1, '2024-09-04 12:27:29', '2024-09-04 12:27:29'
+            ],
+            [
+                46, 46, 'L\'uso delle schiume è controindicato negli incendi di combustibili liquidi',
+                0, '2024-09-04 12:27:36', '2024-09-04 12:27:36'
+            ],
+            [
+                47, 47, 'La schiuma agisce nell\'estinzione attraverso azione di soffocamento e raffreddamento',
+                1, '2024-09-04 12:27:42', '2024-09-04 12:27:42'
+            ],
+            [
+                48, 48, 'La nebulizzazione dell\'acqua ne moltiplica la capacità di raffreddamento',
+                1, '2024-09-04 12:27:48', '2024-09-04 12:27:48'
+            ],
+            [
+                49, 49, 'Se per la produzione della schiuma si utilizza uno schiumogeno A.F.F.F. al posto di quello proteinico, si deve prevedere un maggiore quantitativo di acqua',
+                0, '2024-09-04 12:27:56', '2024-09-04 12:27:56'
+            ],
+            [
+                50, 50, 'Se per la produzione della schiuma si utilizza uno schiumogeno A.F.F.F. al posto di quello proteinico, si può diminuire il quantitativo di acqua',
+                1, '2024-09-04 12:28:05', '2024-09-04 12:28:05'
+            ],
+            [
+                51, 51, 'L\'acqua nebulizzata raffredda meno della stessa quantità erogata a getto pieno',
+                0, '2024-09-04 12:28:13', '2024-09-04 12:28:13'
+            ],
+            [
+                52, 52, 'Le polveri più usate in aeroporto sono quelle polivalenti dette anche "universali"',
+                1, '2024-09-04 12:28:58', '2024-09-04 12:28:58'
+            ],
+            [
+                53, 53, 'Le polveri usate in aeroporto sono polivalenti dette anche "specifiche aeroportuali"',
+                0, '2024-09-04 12:29:08', '2024-09-04 12:29:08'
+            ],
+            [
+                54, 54, 'Uno schiumogeno proteinico ha una efficacia estinguente maggiore di un terzo rispetto ad uno schiumogeno A.F.F.F.',
+                0, '2024-09-04 12:29:17', '2024-09-04 12:29:17'
+            ],
+            [
+                55, 55, 'Uno schiumogeno proteinico ha una efficacia estinguente minore di un terzo rispetto ad uno schiumogeno A.F.F.F.',
+                1, '2024-09-04 12:29:34', '2024-09-04 12:29:34'
+            ],
+            [
+                56, 56, 'Uno schiumogeno deve avere caratteristiche di bassa corrosività e basso punto di congelamento',
+                1, '2024-09-04 12:29:42', '2024-09-04 12:29:42'
+            ],
+            [
+                57, 57, 'Il tensioattivo presente nei liquidi schiumogeni ha la proprietà di diminuire la tensione superficiale dell\'acqua e favorire la formazione delle bolle d\'aria',
+                1, '2024-09-04 12:29:49', '2024-09-04 12:29:49'
+            ],
+            [
+                58, 58, 'Lo schiumogeno formante una pellicola, detto AFFF, è quello più comunemente usato in aeroporto/eliporto',
+                1, '2024-09-04 12:29:56', '2024-09-04 12:29:56'
+            ],
+            [
+                59, 59, 'Nell’incendio di un elicottero si devono affrontare fuochi di classe C',
+                0, '2024-09-04 12:30:04', '2024-09-04 12:30:04'
+            ],
+            [
+                60, 60, 'Le norme CEI classificano i fuochi in 4 classi (A, B, C, D)',
+                0, '2024-09-04 12:30:11', '2024-09-04 12:30:11'
+            ],
+            [
+                61, 61, 'Gli estinguenti ad halon sono stati banditi per ragioni connesse alla loro scarsa efficacia estinguente',
+                0, '2024-09-04 12:30:19', '2024-09-04 12:30:19'
+            ],
+            [
+                62, 62, 'I limiti di infiammabilità di una sostanza chimica si esprimono in temperature',
+                0, '2024-09-04 12:30:25', '2024-09-04 12:30:25'
+            ],
+            [
+                63, 63, 'La lancia antincendio serve per aumentare la portata d’acqua',
+                0, '2024-09-04 12:30:34', '2024-09-04 12:30:34'
+            ],
+            [
+                64, 64, 'In una sostanza chimica infiammabile combustibile solida o liquida concorrono all’incendio i vapori infiammabili emessi per evaporazione dalla sostanza stessa',
+                1, '2024-09-04 12:30:41', '2024-09-04 12:30:41'
+            ],
+            [
+                65, 65, 'In un estintore a CO2 il manometro presente misura la temperatura interna',
+                0, '2024-09-04 12:30:52', '2024-09-04 12:30:52'
+            ],
+            [
+                66, 66, 'La minima concentrazione di ossigeno nell’aria per la sopravvivenza umana è del 18%',
+                1, '2024-09-04 12:30:59', '2024-09-04 12:30:59'
+            ],
+            [
+                67, 67, 'I D.P.I. sono dispacci urgenti in caso d’incidente',
+                0, '2024-09-04 12:31:05', '2024-09-04 12:31:05'
+            ],
+            [
+                68, 68, 'Il fumo emesso dalla combustione dei materiali plastici è di colore bianco',
+                0, '2024-09-04 12:31:10', '2024-09-04 12:31:10'
+            ],
+            [
+                69, 69, 'La schiuma è un composto di acqua, liquido schiumogeno ed aria',
+                1, '2024-09-04 12:31:47', '2024-09-04 12:31:47'
+            ],
+            [
+                70, 70, 'La classe d’incendio A è relativa ai gas',
+                0, '2024-09-04 12:31:57', '2024-09-04 12:31:57'
+            ],
+            [
+                71, 71, 'Le polveri estinguenti sono a base di carbonato di sodio e potassio',
+                1, '2024-09-04 12:32:10', '2024-09-04 12:32:10'
+            ],
+            [
+                72, 72, 'La polvere non deve entrare in contatto con la schiuma',
+                0, '2024-09-04 12:32:20', '2024-09-04 12:32:20'
+            ],
+            [
+                73, 73, 'La tensione di vapore della benzina è minore di quella del gasolio',
+                0, '2024-09-04 12:32:27', '2024-09-04 12:32:27'
+            ],
+            [
+                74, 74, 'Più elevata è la tensione di vapore di un combustibile infiammabile, più è facile domare l’incendio',
+                0, '2024-09-04 12:32:32', '2024-09-04 12:32:32'
+            ],
+            [
+                75, 75, 'Il getto frazionato della lancia ha un minore potere di soffocamento di quello pieno',
+                0, '2024-09-04 12:32:42', '2024-09-04 12:32:42'
+            ],
+            [
+                76, 76, 'Negli schiumogeni sono sempre presenti additivi per favorirne la conservazione',
+                1, '2024-09-04 12:32:50', '2024-09-04 12:32:50'
+            ],
+            [
+                77, 77, 'Nella schiuma è presente una quantità d’acqua almeno del 75%',
+                1, '2024-09-04 12:32:58', '2024-09-04 12:32:58'
+            ],
+            [
+                78, 78, 'La lancia antincendio serve per aumentare la velocità dell’acqua',
+                1, '2024-09-04 12:33:04', '2024-09-04 12:33:04'
+            ],
+            [
+                79, 79, 'L’autorespiratore è caricato ad aria compressa',
+                1, '2024-09-04 12:33:11', '2024-09-04 12:33:11'
+            ],
+            [
+                80, 80, 'L’autoprotettore non è indispensabile in caso di presenza di ossigeno superiore al 10%',
+                0, '2024-09-04 12:33:21', '2024-09-04 12:33:21'
+            ],
+            [
+                81, 81, 'Un fuoco di classe A si riferisce ad un incendio di materiali solidi combustibili',
+                1, '2024-09-04 12:33:27', '2024-09-04 12:33:27'
+            ],
+            [
+                82, 82, 'In caso d’incendio, la visiera termica della tuta d’avvicinamento può venire a contatto con il viso senza conseguenze',
+                0, '2024-09-04 12:33:34', '2024-09-04 12:33:34'
+            ],
+            [
+                83, 83, 'Il magnesio è un metallo incombustibile',
+                0, '2024-09-04 12:33:41', '2024-09-04 12:33:41'
+            ],
+            [
+                84, 84, 'In un incendio di apparecchiature elettriche conviene usare la schiuma frazionata',
+                0, '2024-09-04 12:33:49', '2024-09-04 12:33:49'
+            ],
+            [
+                85, 85, 'La combustione consiste nella formazione di un miscuglio',
+                0, '2024-09-04 12:33:58', '2024-09-04 12:33:58'
+            ],
+            [
+                86, 86, 'Nella combustione la temperatura d’innesco dipende anche dalla pressione e dall’umidità relativa dell’aria',
+                1, '2024-09-04 12:34:06', '2024-09-04 12:34:06'
+            ],
+            [
+                87, 87, 'L’aria è costituita per la maggior parte da ossigeno',
+                0, '2024-09-04 12:34:13', '2024-09-04 12:34:13'
+            ],
+            [
+                88, 88, 'L’azoto è in grado di interagire chimicamente nella combustione',
+                0, '2024-09-04 12:34:18', '2024-09-04 12:34:18'
+            ],
+            [
+                89, 89, 'La schiuma si interpone tra il liquido infiammabile e l’aria, inibendo l’evaporazione e la miscelazione',
+                1, '2024-09-04 12:34:27', '2024-09-04 12:34:27'
+            ],
+            [
+                90, 90, 'La tensione superficiale si riferisce allo stato gassoso',
+                0, '2024-09-04 12:34:34', '2024-09-04 12:34:34'
+            ],
+            [
+                91, 91, 'La schiuma è l’agente estinguente ideale per fuochi di classe B',
+                1, '2024-09-07 04:49:14', '2024-09-07 04:49:14'
+            ],
+            [
+                92, 92, 'L’acqua congelata si riduce di volume',
+                0, '2024-09-07 04:51:49', '2024-09-07 04:51:49'
+            ],
+            [
+                93, 93, 'Durante l’estinzione, l’estinguente perde calore a vantaggio del combustibile',
+                0, '2024-09-07 04:51:55', '2024-09-07 04:51:55'
+            ],
+            [
+                94, 94, 'Per ottenere una combustione è necessaria la presenza di calore',
+                1, '2024-09-07 04:52:03', '2024-09-07 04:52:03'
+            ],
+            [
+                95, 95, 'Rispetto ai tre fattori che costituiscono il “triangolo del fuoco”, “smassare” il combustibile equivale a ridurre l’azione del comburente',
+                0, '2024-09-07 04:52:26', '2024-09-07 04:52:26'
+            ],
+        ],
+        [
+            'modulo_1'
+        ]
+    ],
 });

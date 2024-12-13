@@ -27,6 +27,7 @@ export default {
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+            <h4>Quesiti a risposta multipla</h4>
 
             <!-- module 1 handler -->
             <div class="div_wrapper">
@@ -103,12 +104,38 @@ export default {
             </div>
             <hr>
 
+            <h4>Quesiti vero o falso</h4>
+            <div class="div_wrapper">
+                <div>
+                    <p>
+                        Modulo 1
+                    </p>
+                </div>
+                <div>
+                    <span class="span-activate" v-if="state.module_tf_1"
+                        @click="state.module_tf_1 = false">Disattiva</span><span class="span-deactivate"
+                        v-if="!state.module_tf_1" @click="state.module_tf_1 = true">Attiva</span>
+                </div>
+            </div>
+            <hr>
+
         </div>
     </div>
 
 </template>
 
 <style scoped>
+:root {
+    --bg-bs-primary: #0d6efd;
+}
+
+div.offcanvas-body h4 {
+    color: rgba(113, 113, 113, 0.879);
+    border-bottom: solid .5px #0d6efd;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
 p#offcanvas_box {
     background-color: white;
     display: inline-block;
