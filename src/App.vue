@@ -26,7 +26,7 @@ export default {
   <Offcanvas></Offcanvas>
   <Main></Main>
   <div id="empty" v-if="!state.module_1 && !state.module_2 && !state.module_3 && !state.module_4 && !state.module_5">
-    <h1 class="text-center display-1">Nessun modulo selezionato</h1>
+    <h1 class="text-center display-1 text-white">Nessun modulo selezionato</h1>
     <hr class="my-1">
     <h6 class="text-center">Seleziona un modulo utilizzando il pulsante '<small>Clicca qui per i moduli</small>' in alto
       a sinistra</h6>
@@ -43,6 +43,7 @@ div#empty {
 
   h6 {
     width: 90%;
+    color: #888888;
   }
 }
 </style>

@@ -989,7 +989,7 @@ export const state = reactive({
 
     tf_prevenction_b1s: [
         [
-            'module_1'
+            'module_tf_1'
         ],
         [
             [
@@ -1354,7 +1354,7 @@ export const state = reactive({
             ],
         ],
         [
-            'modulo_1'
+            'modulo_tf_1'
         ]
     ],
 });

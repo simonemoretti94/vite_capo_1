@@ -10,6 +10,8 @@ export default {
     }
   },
   methods: {
+
+    // multiple logic
     question_answer(n_question, list) {
       let tempValue = document.getElementById(`question_${n_question}_${list[0]}`).value;
       //console.log(`Question n: ${n_question}`)
@@ -19,7 +21,7 @@ export default {
         if (element[1] == n_question) {
           console.log(element);
           let tempBtn = document.getElementById(`button_${n_question}_${list[0]}`)
-          //console.log(tempBtn);
+          console.log(tempBtn);
           if (element[6] == tempValue) {
             console.log('right!');
             tempBtn.classList.remove('btn-danger')
@@ -34,12 +36,52 @@ export default {
           }
         }
       });
+    },
+
+    // tf logic
+    question_tf_answer(n_question, list) {
+      let tempValue = document.getElementById(`question_${n_question}_${list[0]}`).value;
+      //console.log(`Question n: ${n_question}`)
+      //console.log(document.getElementById(`question_${n_question}_${list[0]}`).value, typeof (document.getElementById(`question_${n_question}_${list[0]}`).value));
+      let tempAnswer = null
+      tempAnswer = document.getElementById(`question_${n_question}_${list[0]}`).value
+      //console.log(tempAnswer, typeof tempAnswer);
+
+      if (tempValue === '0' || tempValue === '1') {
+        tempAnswer = parseInt(tempValue);
+        //console.log(tempAnswer, typeof tempAnswer);
+      }
+      else {
+        //console.error("Il valore dell'input non è né '0' né '1'");
+      }
+
+      list[1].forEach(element => {
+        if (element[1] == n_question) {
+          //console.log(element);
+          let tempBtn = document.getElementById(`button_${n_question}_${list[0]}`)
+          //console.log(tempBtn);
+          if (element[3] == tempAnswer) {
+            console.log('right!');
+            tempBtn.classList.remove('btn-danger')
+            tempBtn.classList.add('btn-success')
+            tempBtn.innerHTML = 'CORRETTO'
+          }
+          else {
+            //console.log('wrong!');
+            tempBtn.classList.remove('btn-primary')
+            tempBtn.classList.add('btn-danger')
+            tempBtn.innerHTML = 'INVIA <small>(errore)</small>'
+          }
+        }
+      });
     }
   }
 }
 </script>
 
 <template>
+
+  <!-- multiple answers -->
 
   <!-- module 1 -->
   <div v-if="state.module_1" id="wrapper" class="mt-3">
@@ -221,6 +263,48 @@ export default {
           </button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- tf answers -->
+
+  <!-- module 1 -->
+  <div v-if="state.module_tf_1" id="wrapper" class="mt-3">
+    <h6 class="my-2 display-6 text-center">{{ state.tf_prevenction_b1s[2][0] }}</h6>
+    <hr>
+    <div v-for="question in state.tf_prevenction_b1s[1]" :key="question[0]">
+      <p><small>Domanda n: <b>{{ question[1] }}</b></small></p>
+      <p>{{ question[2] }}</p>
+      <hr>
+      <div id="sub-wrapper">
+        <div class="w-100  d-flex flex-row">
+          <select class="w-50" :name="`question_${question[1]}`"
+            :id="`question_${question[1]}_${state.tf_prevenction_b1s[0]}`" style="height: 30px; margin: auto auto;">
+            <option selected disabled class="text-center">&DownArrow;</option>
+            <option value="1">vero</option>
+            <option value="0">falso</option>
+          </select>
+          <div id="submit" class="w-50">
+            <div class="w-100">
+              <button class="btn btn-lg btn-primary bg-gradient"
+                @click="question_tf_answer(question[1], state.tf_prevenction_b1s)"
+                :id="`button_${question[1]}_${state.tf_prevenction_b1s[0]}`">
+                Invia
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- <div id="submit">
+        <div>
+          <button class="btn btn-lg btn-primary bg-gradient"
+            @click="question_answer(question[1], state.tf_prevenction_b1s)"
+            :id="`button_${question[1]}_${state.tf_prevenction_b1s[0]}`">
+            Invia
+          </button>
+        </div>
+      </div> -->
     </div>
   </div>
 
