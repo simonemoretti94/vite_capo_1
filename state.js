@@ -6,15 +6,15 @@ export const state = reactive({
 
     // Multiple answers variables
 
-    module_1: false,
-    module_2: false,
-    module_3: false,
-    module_4: false,
-    module_5: false,
+    module_1: true,
+    module_2: true,
+    module_3: true,
+    module_4: true,
+    module_5: true,
 
     // True or false variables
 
-    module_tf_1: false,
+    module_tf_1: true,
 
     /* methods */
 

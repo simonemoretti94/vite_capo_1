@@ -35,7 +35,7 @@ export default {
                         Modulo 1
                     </p>
                     <p>
-                        Test
+                        <span v-if="state.module_1" @click="state.scrollToDiv('wrapper_module_1')">Vai</span>
                     </p>
                 </div>
                 <div>
@@ -53,7 +53,7 @@ export default {
                         Modulo 2
                     </p>
                     <p>
-                        Vai
+                        <span v-if="state.module_2" @click="state.scrollToDiv('wrapper_module_2')">Vai</span>
                     </p>
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export default {
                         Modulo 3
                     </p>
                     <p>
-                        Vai
+                        <span v-if="state.module_3" @click="state.scrollToDiv('wrapper_module_3')">Vai</span>
                     </p>
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export default {
                         Modulo 4
                     </p>
                     <p>
-                        Vai
+                        <span v-if="state.module_4" @click="state.scrollToDiv('wrapper_module_4')">Vai</span>
                     </p>
                 </div>
                 <div>
@@ -107,7 +107,7 @@ export default {
                         Modulo 5
                     </p>
                     <p>
-                        Vai
+                        <span v-if="state.module_5" @click="state.scrollToDiv('wrapper_module_5')">Vai</span>
                     </p>
                 </div>
                 <div>
@@ -125,7 +125,7 @@ export default {
                         Modulo 1
                     </p>
                     <p>
-                        <span @click="state.scrollToDiv('wrapper_module_tf_1')">Vai</span>
+                        <span v-if="state.module_tf_1" @click="state.scrollToDiv('wrapper_module_tf_1')">Vai</span>
                     </p>
                 </div>
                 <div>
