@@ -7,6 +7,8 @@ export default {
     return {
       state,
 
+      scroll_Y: null,
+      scroll_down: false,
     }
   },
   methods: {
@@ -55,14 +57,35 @@ export default {
         }
       });
     },
+    // Scrolling to page's top
+    backToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
 
-  }
+  },
+  mounted() {
+    window.addEventListener('scroll', () => {
+      this.scroll_Y = window.scrollY;
+      //console.log(`window: ${window.scrollY}\nvar: ${this.scroll_Y}`);
+      if (window.scrollY > 0) {
+        this.scroll_down = true;
+      }
+      else {
+        this.scroll_down = false;
+      }
+    });
+  },
 }
 </script>
 
 <template>
   <section id="main_section">
     <h6 id="service_h6">Questo è un sito mobile first, non supporta<br>viewports > 768px</h6>
+    <div id="div_scroll">
+      <span @click="backToTop()" v-if="this.scroll_down">
+        Torna su
+      </span>
+    </div>
 
     <!-- multiple answers -->
 
@@ -292,6 +315,28 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+section#main_section {
+  position: relative;
+
+  div#div_scroll {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    span {
+      background: linear-gradient(180deg, rgb(213, 213, 213), white, rgb(213, 213, 213));
+      border: solid 1px rgb(0, 0, 0)k;
+      border-radius: 5px;
+      padding: 0 3px;
+    }
+
+  }
+}
+
 
 
 h6#service_h6 {
