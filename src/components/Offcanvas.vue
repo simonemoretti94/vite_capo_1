@@ -13,9 +13,8 @@ export default {
 </script>
 
 <template>
-    <p id="offcanvas_box" data-bs-toggle="offcanvas" data-bs-target="#Id1" aria-controls="Id1">&LeftArrow;
-        <small><u>Clicca qui per i
-                moduli</u></small>
+    <p id="offcanvas_box" data-bs-toggle="offcanvas" data-bs-target="#Id1" aria-controls="Id1">
+        &LeftArrow;<u>Clicca qui per i moduli</u>
     </p>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="Id1"
@@ -137,15 +136,24 @@ div.offcanvas-body h4 {
 }
 
 p#offcanvas_box {
-    background-color: white;
     display: inline-block;
+    background-color: white;
+    margin-left: .5rem;
+    margin-top: .2rem;
     padding: .25rem;
+    border-radius: 6px;
     box-shadow: 1px 2px black;
 
-    :hover {
-        color: red;
-        border-radius: 5px;
-    }
+    font-size: small;
+
+
+
+
+}
+
+p#offcanvas_box:hover {
+    background-color: #0d6efd;
+    color: white;
 }
 
 div.div_wrapper {

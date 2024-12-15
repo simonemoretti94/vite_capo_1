@@ -55,6 +55,11 @@ export default {
         }
       });
     },
+
+    scrollToDiv(tag_id) {
+      let tempEl = document.getElementById(tag_id);
+      tempEl.scrollIntoView({ behavior: 'smooth' })
+    },
   }
 }
 </script>
@@ -66,7 +71,7 @@ export default {
     <!-- multiple answers -->
 
     <!-- module 1 -->
-    <div v-if="state.module_1" id="wrapper" class="mt-3">
+    <div v-if="state.module_1" :id="`wrapper_${state.multiple_prevenction_b1s[0][0]}`" class="mt-3">
       <h6 class="my-2 display-6 text-center">{{ state.multiple_prevenction_b1s[2][0] }}</h6>
       <hr>
       <div v-for="question in state.multiple_prevenction_b1s[1]" :key="question[0]">
@@ -104,7 +109,7 @@ export default {
 
 
     <!-- module 2 -->
-    <div v-if="state.module_2" id="wrapper" class="mt-3">
+    <div v-if="state.module_2" :id="`wrapper_${state.multiple_general_b2s[0][0]}`" class="mt-3">
       <h6 class="my-2 display-6 text-center">{{ state.multiple_general_b2s[2][0] }}</h6>
       <hr>
       <div v-for="question in state.multiple_general_b2s[1]" :key="question[0]">
@@ -140,7 +145,7 @@ export default {
     </div>
 
     <!-- module 3 -->
-    <div v-if="state.module_3" id="wrapper" class="mt-3">
+    <div v-if="state.module_3" :id="`wrapper_${state.multiple_helihems_b3s[0][0]}`" class="mt-3">
       <h6 class="my-2 display-6 text-center">{{ state.multiple_helihems_b3s[2][0] }}</h6>
       <hr>
       <div v-for="question in state.multiple_helihems_b3s[1]" :key="question[0]">
@@ -176,7 +181,7 @@ export default {
     </div>
 
     <!-- module 4 -->
-    <div v-if="state.module_4" id="wrapper" class="mt-3">
+    <div v-if="state.module_4" :id="`wrapper_${state.multiple_helitechnique_b4s[0][0]}`" class="mt-3">
       <h6 class="my-2 display-6 text-center">{{ state.multiple_helitechnique_b4s[2][0] }}</h6>
       <hr>
       <div v-for="question in state.multiple_helitechnique_b4s[1]" :key="question[0]">
@@ -213,7 +218,7 @@ export default {
     </div>
 
     <!-- module 5 -->
-    <div v-if="state.module_5" id="wrapper" class="mt-3">
+    <div v-if="state.module_5" :id="`wrapper_${state.multiple_firstaid_b5s[0][0]}`" class="mt-3">
       <h6 class="my-2 display-6 text-center">{{ state.multiple_firstaid_b5s[2][0] }}</h6>
       <hr>
       <div v-for="question in state.multiple_firstaid_b5s[1]" :key="question[0]">
@@ -251,7 +256,7 @@ export default {
     <!-- tf answers -->
 
     <!-- module 1 -->
-    <div v-if="state.module_tf_1" id="wrapper" class="mt-3">
+    <div v-if="state.module_tf_1" :id="`wrapper_${state.tf_prevenction_b1s[0][0]}`" class="mt-3">
       <h6 class="my-2 display-6 text-center">{{ state.tf_prevenction_b1s[2][0] }}</h6>
       <hr>
       <div v-for="question in state.tf_prevenction_b1s[1]" :key="question[0]">
@@ -316,7 +321,7 @@ h6#service_h6 {
   }
 }
 
-div#wrapper {
+div[id^='wrapper_'] {
   background-color: white;
   margin: auto .5rem;
   border: .5px solid black;

@@ -1354,7 +1354,7 @@ export const state = reactive({
             ],
         ],
         [
-            'modulo_tf_1'
+            'Modulo 1 v/f'
         ]
     ],
 });
