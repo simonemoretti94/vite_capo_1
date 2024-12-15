@@ -34,6 +34,9 @@ export default {
                     <p>
                         Modulo 1
                     </p>
+                    <p>
+                        Test
+                    </p>
                 </div>
                 <div>
                     <span class="span-activate" v-if="state.module_1"
@@ -48,6 +51,9 @@ export default {
                 <div>
                     <p>
                         Modulo 2
+                    </p>
+                    <p>
+                        Vai
                     </p>
                 </div>
                 <div>
@@ -64,6 +70,9 @@ export default {
                     <p>
                         Modulo 3
                     </p>
+                    <p>
+                        Vai
+                    </p>
                 </div>
                 <div>
                     <span class="span-activate" v-if="state.module_3"
@@ -78,6 +87,9 @@ export default {
                 <div>
                     <p>
                         Modulo 4
+                    </p>
+                    <p>
+                        Vai
                     </p>
                 </div>
                 <div>
@@ -94,6 +106,9 @@ export default {
                     <p>
                         Modulo 5
                     </p>
+                    <p>
+                        Vai
+                    </p>
                 </div>
                 <div>
                     <span class="span-activate" v-if="state.module_5"
@@ -108,6 +123,9 @@ export default {
                 <div>
                     <p>
                         Modulo 1
+                    </p>
+                    <p>
+                        <span @click="state.scrollToDiv('wrapper_module_tf_1')">Vai</span>
                     </p>
                 </div>
                 <div>
@@ -161,7 +179,37 @@ div.div_wrapper {
 
     div:first-child {
         width: 80%;
-        text-align: left;
+        display: flex;
+
+        p:first-child {
+            width: 80%;
+            text-align: left
+        }
+
+        p:last-child {
+            width: 20%;
+            text-align: center;
+            font-size: small;
+
+            span {
+                padding: 5px;
+                border: solid .5px black;
+                border-radius: 50%;
+                color: white;
+                background: linear-gradient(45deg, white, #707070ca, #3c3c3cd6);
+                text-shadow: 1px 1px black;
+            }
+
+            span:hover {
+                transform: scale(.9);
+                background: white;
+                color: #0d6efd;
+                border: solid .5px blue;
+                text-shadow: 0 0 white;
+            }
+        }
+
+
     }
 
     div:last-child {

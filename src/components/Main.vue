@@ -56,10 +56,6 @@ export default {
       });
     },
 
-    scrollToDiv(tag_id) {
-      let tempEl = document.getElementById(tag_id);
-      tempEl.scrollIntoView({ behavior: 'smooth' })
-    },
   }
 }
 </script>

@@ -6,15 +6,23 @@ export const state = reactive({
 
     // Multiple answers variables
 
-    module_1: true,
-    module_2: true,
-    module_3: true,
-    module_4: true,
-    module_5: true,
+    module_1: false,
+    module_2: false,
+    module_3: false,
+    module_4: false,
+    module_5: false,
 
     // True or false variables
 
-    module_tf_1: true,
+    module_tf_1: false,
+
+    /* methods */
+
+    // shared between offcanvas and main
+    scrollToDiv(tag_id) {
+        let tempEl = document.getElementById(tag_id);
+        tempEl.scrollIntoView({ behavior: 'smooth' })
+    },
 
     /* modules data */
 
