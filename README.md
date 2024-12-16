@@ -35,7 +35,7 @@ Esegui il comando per costruire il progetto.
 2.1  Aggiungi i file nella directory dist:
   Aggiungi i file generati nella directory dist al tuo repository Git.
   git add dist -f
-  git commit -m "Add dist directory"
+  git commit -m "Dist updated"
 
 3. Crea un branch gh-pages
 Se non lo hai già fatto, crea un branch gh-pages nel tuo repository GitHub.

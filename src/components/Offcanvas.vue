@@ -193,11 +193,11 @@ div.div_wrapper {
 
             span {
                 padding: 5px;
-                border: solid .5px black;
+                border: solid .5px white;
                 border-radius: 50%;
-                color: white;
-                background: linear-gradient(45deg, white, #707070ca, #3c3c3cd6);
-                text-shadow: 1px 1px black;
+                color: black;
+                background: linear-gradient(180deg, rgb(213, 213, 213), white, rgb(213, 213, 213));
+                text-shadow: 1px 1px rgb(205, 205, 205);
             }
 
             span:hover {
