@@ -326,12 +326,16 @@ section#main_section {
     left: 0;
     width: 100%;
     text-align: center;
+    margin-bottom: .5rem;
 
     span {
       background: linear-gradient(180deg, rgb(213, 213, 213), white, rgb(213, 213, 213));
       border: solid 1px rgb(0, 0, 0)k;
       border-radius: 5px;
-      padding: 0 3px;
+      padding: 2px 8px;
+      color: rgba(0, 0, 0, 0.759);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 500;
     }
 
   }
