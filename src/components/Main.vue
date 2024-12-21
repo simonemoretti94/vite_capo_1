@@ -82,7 +82,7 @@ export default {
   <section id="main_section">
     <h6 id="service_h6">Questo è un sito mobile first, non supporta<br>viewports > 768px</h6>
     <div id="div_scroll">
-      <span @click="backToTop()" v-if="this.scroll_down">
+      <span id="to_top" @click="backToTop()" v-if="this.scroll_down">
         Torna su
       </span>
     </div>
@@ -328,20 +328,18 @@ section#main_section {
     text-align: center;
     margin-bottom: .5rem;
 
-    span {
+    span#to_top {
       background: linear-gradient(180deg, rgb(213, 213, 213), white, rgb(213, 213, 213));
-      border: solid 1px rgb(0, 0, 0)k;
+      border: solid 1px rgb(155, 155, 155);
       border-radius: 5px;
       padding: 2px 8px;
       color: rgba(0, 0, 0, 0.759);
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 500;
+      cursor: pointer;
     }
-
   }
 }
-
-
 
 h6#service_h6 {
   display: none;

@@ -172,6 +172,7 @@ p#offcanvas_box {
 p#offcanvas_box:hover {
     background-color: #0d6efd;
     color: white;
+    cursor: pointer;
 }
 
 div.div_wrapper {
